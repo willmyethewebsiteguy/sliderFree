@@ -1,6 +1,6 @@
 if ($('[data-wm-plugin="section-slider"]').length && (window.self == window.top || $('[data-view-slider="true"]').length || $('.sqs-seven-one').length)){
   if (!$('head link[href*="WMSliderFREE"]').length){
-    $('head').prepend('<link href="https://assets.codepen.io/3198845/WMSliderFREEv3.0.css" rel="stylesheet">')
+    $('head').prepend('<link href="https://cdn.jsdelivr.net/gh/willmyethewebsiteguy/sliderFree@3.0/styles.min.css" rel="stylesheet">')
   }
 }
 /*Swiper 6.4.10 | Most modern mobile touch slider and framework with hardware accelerated transitions | https://swiperjs.com | Copyright 2014-2021 Vladimir Kharlampidi | Released under the MIT License | Released on: January 29, 2021*/
