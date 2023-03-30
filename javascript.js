@@ -1,6 +1,6 @@
 if ($('[data-wm-plugin="section-slider"]').length && (window.self == window.top || $('[data-view-slider="true"]').length || $('.sqs-seven-one').length)){
   if (!$('head link[href*="WMSliderFREE"]').length){
-    $('head').prepend('<link href="https://cdn.jsdelivr.net/gh/willmyethewebsiteguy/sliderFree@3.0/styles.min.css" rel="stylesheet">')
+    $('head').prepend('<link href="https://cdn.jsdelivr.net/gh/willmyethewebsiteguy/sliderFree@3/styles.min.css" rel="stylesheet">')
   }
 }
 /**
@@ -158,6 +158,10 @@ function SectionSlider(i, slides, staticFirst, $staticFirst, speed, pagination, 
     if (loading) {
       img.removeAttribute('loading')
     }
+  })
+  
+  thisObj.$sliderContainer.find('.content-wrapper img[data-src]').each(function() {
+    ImageLoader?.load($(this)[0], {load: true});
   })
   
   
