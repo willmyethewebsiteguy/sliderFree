@@ -2,6 +2,9 @@
 .wm-slide.page-section:first-child{
   padding-top:0px;
 }
+main .sections:first-child > .wm-slider-container:not(:first-child) .page-section:first-child{
+  padding-top:0px !important;
+}
 
 
 /*When in Edit Mode*/
